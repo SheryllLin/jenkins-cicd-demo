@@ -3,12 +3,6 @@ pipeline {
 
     stages {
 
-        stage('Clone Repository') {
-            steps {
-                git 'https://github.com/SheryllLin/jenkins-cicd-demo'
-            }
-        }
-
         stage('Install Dependencies') {
             steps {
                 sh 'npm install'
